@@ -326,6 +326,15 @@ section form textarea{
         width: 100%;
         overflow:visible;
     }
+    header ul li{
+        margin: 0 calc(20vw / 6)
+    }
+    header ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+    }
     main {
         display: flex;
         flex-direction: row;
