@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <title>Contacto - Alex Bernardos</title>
+
+    <style>
+        main{
+            height: 84vh;
+        }
+
+        @media (max-width: 1000px) {
+            main{
+                height: 115vh;
+                max-height: 115vh;
+                align-items: baseline;
+                flex-direction: column;
+            }
+            aside {
+                width: 90vw;
+                max-width: 90vw;
+                margin: 5% auto;
+            }
+            aside ul li a{
+                font-size: calc(1rem + 1vw);
+            }
+            section {
+                width: 90vw;
+                max-width: 90vw;
+                margin: 0 auto; 
+            }
+            footer {
+                width: 117vw;
+                max-width: 117vw;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 800px) {
+            main{
+                height: 105vh;
+                max-height: 105vh;
+                margin: 0 auto;
+            }
+            section form{
+                width: 90vw;
+                max-width: 90vw;
+                margin: 0 auto; 
+            }
+            section form label{
+                font-size: calc(1rem + 0.1vw);
+            }
+            form input[type="text"], form input[type="email"], form textarea{
+                width: 90vw;
+                font-size: calc(1rem + 0.1vw);
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./sobremi.html">Sobre mi</a></li>
+                <li><a href="./proyectos.html">Proyectos</a></li>
+                <li><a href="./galeria.html">Galería</a></li>
+                <li><a href="#" class="actual">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <aside>
+            <h1>Redes sociales</h1>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/alexbg3/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/rotoforze" target="_blank">Github</a></li>
+                <li><a href="mailto:alexbg826@gmail.com">Correo</a></li>
+            </ul>
+        </aside>
+        <section>
+            <h1>Contacto</h1>
+            <p>Si quieres ponerte en contacto conmigo, puedes hacerlo a través de este formulario o a través de mis redes sociales.</p>
+            <form action="" method="">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" maxlength="200" required></textarea>
+                
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Alex Bernardos</p>
+    </footer>
+</body>
+</html>

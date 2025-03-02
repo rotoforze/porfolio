@@ -1,0 +1,437 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* header, navegación */
+
+header{
+    background-color: #333;
+    padding: 10px 0;
+    border-bottom: 4px solid #555;
+    height: calc(10vh - 4vh);
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 1vh 0px 1vh 0px;
+}
+header li{
+    margin: 0 calc(20vw / 3.5);
+}
+
+header li a{
+    color: white;
+    text-decoration: none;
+    font-size: calc(1.5vw + 1vh);
+    font-family: 'Arial';
+}
+
+header li a.actual{
+    color: #eeeeee;
+    text-shadow: 0px 0px 5px white;
+    border-bottom: 2px solid white;
+}
+
+header li a:hover{
+    color: #eeeeee;
+    text-shadow: 0px 0px 5px white;
+}
+
+/* main // aside -- section */
+main{
+    display: flex;
+    flex-direction: row;
+    background-color: #f1f1f1;
+    height: calc(85vh + 4vh);
+    max-height: 85vh;
+}
+
+aside{
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: fit-content;
+    width: calc(20vw + 20vh);
+    border-radius: 10px;
+}
+
+aside img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1vh;
+    border: white 2px solid;
+    border-radius: 10px;
+    background-color: #444;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+aside h1{
+    text-align: center;
+    font-size: calc(8px + 1vw + 1vh);
+    font-family: 'Arial';
+}
+
+section{
+    /*background-color: rgba(68, 68, 68, 0.8);*/
+    color: black;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    margin: 6vh 0;
+
+    margin-right: 15px;
+    height: calc(20vh + 80px);
+    width: calc(60vw + 60vh);
+    border-radius: 10px;
+}
+
+section h1{
+    text-align: center;
+    text-shadow: 5px 5px 5px #333;
+    font-size: calc(8px + 1vw + 1vh);
+    font-family: 'Arial';
+    margin-bottom: 10px;
+}
+
+section h2, section h3{
+    text-align: left;
+    text-shadow: 5px 5px 5px #333;
+    font-size: calc(4px + 1vw + 1vh);
+    font-family: 'Arial';
+    margin-bottom: 10px;
+}
+
+section h3{
+    font-size: calc(2px + 1vw + 1vh);
+}
+
+section p{
+    text-shadow: 1px 0px 5px #333;
+    text-align: justify;
+    font-size: calc(1vw + 1vh);
+    font-family: 'Arial';
+}
+section a{
+    text-shadow: 1px 0px 5px #333;
+    text-align: justify;
+    text-decoration: none;
+    color: #333;
+    font-size: calc(0.6vw + 1vh);
+    font-family: 'Arial';
+}
+
+section a:hover{
+    color: #555;
+    text-shadow: 0px 0px 5px #333;
+    cursor: pointer;
+}
+
+/* aptitudes */
+
+.aptitudes {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.aptitudes .izquierda{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4vw;
+}
+.aptitudes ul{
+    display: flex;
+    flex-direction: column;
+    list-style: circle;
+    margin: 10px;
+}
+
+.aptitudes ul li{
+    text-shadow: 1px 0px 5px #333;
+    text-align: left   ;
+    text-decoration: none;
+    font-size: calc(0.6vw + 1vh);
+    font-family: 'Arial';
+}
+
+.aptitudes h3{
+    text-align: left;
+    text-shadow: 5px 5px 5px #333;
+    font-size: calc(3px + 1vw + 1vh);
+    font-family: 'Arial';
+    margin-bottom: 10px;
+}
+
+/* footer */
+footer{
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    font-size: calc(1em + 1vh);
+}
+
+/* galeria de proyectos */
+
+embed {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+li .contenedor h1{
+    text-align: left;
+    text-shadow: 5px 5px 5px #333;
+    font-size: calc(3px + 1vw + 1vh);
+    font-family: 'Arial';
+    margin-bottom: 10px;
+}
+
+li .contenedor p{
+    text-shadow: 1px 0px 5px #333;
+    text-align: justify;
+    font-size: calc(0.6vw + 1vh);
+    font-family: 'Arial';
+}
+
+li .contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    box-shadow: 5px 5px 5px #333;
+}
+li .contenedor img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* galeria */
+.titulo{
+    text-align: center;
+    text-shadow: 5px 5px 5px #333;
+    font-size: calc(3px + 1vw + 1vh);
+    font-family: 'Arial';
+    margin-bottom: 10px;
+
+}
+table{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+tbody{
+    width: calc(100% - 10%);
+    display: flex;
+    flex-direction: column;
+    border-collapse: collapse;
+}
+
+table th{
+    border: #333 4px solid;
+}
+
+table tr img {
+    width: 100%;
+    height: calc((100% - 20px) / 2);
+    padding: 5% 0 5% 0;
+    border-radius: 10px;
+}
+table figcaption{
+    text-align: center;
+    text-shadow: 1px 0px 5px #333;
+    font-size: calc(0.6vw + 1vh);
+    font-family: 'Arial';
+}
+
+/* form */
+aside ul li{
+    text-align: center;
+}
+aside ul li a{
+    font-size: calc(1.5vw + 1vh);
+    text-decoration: none;
+    color: #eeeeee;
+}
+aside ul li a:hover{
+    color: #f1f1f1;
+    text-shadow: 0px 0px 8px white;
+    cursor: pointer;
+}
+
+section form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+    padding: 30px;
+    width: 100vh;
+    max-width: 100vh;
+    border-radius: 10px;
+    background-color: #eeeeee;
+    border: #333 solid 1px;
+    box-shadow: 5px 5px 5px #333;
+}
+section form label{
+    text-align: left;
+    text-shadow: 5px 5px 5px #333;
+    font-size: calc(1em + 1vh);
+    font-family: 'Arial';
+    margin-bottom: 10px;
+}
+section form input{
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: #333 2px solid;
+    font-size: calc(0.6vw + 1vh);
+    font-family: 'Arial';
+}
+section form textarea{
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: #333 2px solid;
+    font-size: calc(0.6vw + 1vh);
+    font-family: 'Arial';
+    resize: none;
+}
+
+
+/* MEDIA */
+@media (max-width: 1000px) {
+    html {
+        width: 100%;
+        overflow:visible;
+    }
+    main {
+        display: flex;
+        flex-direction: row;
+        width: 120vw;
+        max-width: 120vw;
+        height: 105vh;
+        max-height: 105vh;
+        align-items: center;
+        text-align: center;
+    }
+    aside {
+        width: 40vw;
+        max-width: 40vw;
+        margin-left: 5%;
+    }
+    header {
+        width: 150vw;
+        max-width: 120vw;
+    }
+    section {
+        width: auto;
+    }
+    section .aptitudes {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    section p{
+        font-size: calc(1.4vw + 1vh);
+    }
+    section a{
+        font-size: calc(1.2vw + 1vh);
+    }
+    .apartado ul li{
+        font-size: calc(1.2vw + 1vh);
+    }
+    section .aptitudes .derecha {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    section .aptitudes .derecha .apartado{
+        display: flex;
+        flex-direction: column;
+    }
+    footer {
+        height: auto;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width: 800px) {
+    html {
+        width: 100%;
+        overflow:visible;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 120vw;
+        max-width: 120vw;
+        height: 105vh;
+        max-height: 105vh;
+        align-items: center;
+        text-align: center;
+    }
+    header {
+        width: 150vw;
+        max-width: 120vw;
+    }
+    section {
+        width: auto;
+    }
+    section .aptitudes {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    section p{
+        font-size: calc(1.4vw + 2vh);
+    }
+    section a{
+        font-size: calc(1.2vw + 2vh);
+    }
+    .apartado ul li{
+        font-size: calc(1.2vw + 2vh);
+    }
+    section .aptitudes .derecha {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    section .aptitudes .derecha .apartado{
+        display: flex;
+        flex-direction: column;
+    }
+    footer {
+        height: auto;
+        width: 100%;
+        text-align: center;
+    }
+    section ul li a{
+        font-size: calc(1.5vw + 2vh);
+    }
+}
