@@ -12,11 +12,14 @@
         main{
             height: 84vh;
         }
+        section {
+            margin: 0px 0px;
+        }
 
         @media (max-width: 1000px) {
             main{
-                height: 115vh;
-                max-height: 115vh;
+                height: 100vh;
+                max-height: 100vh;
                 align-items: baseline;
                 flex-direction: column;
             }
@@ -29,33 +32,25 @@
                 font-size: calc(1rem + 1vw);
             }
             section {
-                width: 90vw;
-                max-width: 90vw;
+                width: 80vw;
+                max-width: 80vw;
                 margin: 0 auto; 
             }
             footer {
-                width: 117vw;
-                max-width: 117vw;
                 text-align: center;
             }
         }
 
         @media (max-width: 800px) {
             main{
-                height: 105vh;
-                max-height: 105vh;
+                height: 100vh;
+                max-height: 100vh;
                 margin: 0 auto;
-            }
-            section form{
-                width: 90vw;
-                max-width: 90vw;
-                margin: 0 auto; 
             }
             section form label{
                 font-size: calc(1rem + 0.1vw);
             }
             form input[type="text"], form input[type="email"], form textarea{
-                width: 90vw;
                 font-size: calc(1rem + 0.1vw);
                 
             }
